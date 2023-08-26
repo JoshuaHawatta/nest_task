@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 services:
   mongodb:
@@ -6,7 +6,7 @@ services:
     image: mongo:latest
     restart: always
     volumes:
-      - .:/usr/app/.data/data/db
+      - .:/usr/src/app/.data/data/db
     ports:
       - '27017:27017'
     logging:
