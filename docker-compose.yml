@@ -28,6 +28,8 @@ services:
     build: .
     ports:
       - '3333:3333'
+    volumes:
+      - .:/usr/src/app
     networks:
       - app-network
     depends_on:
