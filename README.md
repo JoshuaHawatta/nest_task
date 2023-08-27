@@ -28,9 +28,10 @@ npm run test:watch -t caminho_relativo_do_arquivo
 {
   "MONGO_URI": "mongodb://<USER>:<PASSWD>@<CLUSTER>:<PORT>/<DATABASE>",
   "MONGO_USER": "<USER>",
-  "MONGO_PASSWD": "<PASSWD>"
+  "MONGO_PASSWD": "<PASSWD>",
   "PORT": "eg:(0000)",
   "JWT_SECRET": "chave secreta do JWT",
+  "DOCKER_ENV": "arquivo de desenvolvimento que está no diretório docker_environments"
 }
 ```
 

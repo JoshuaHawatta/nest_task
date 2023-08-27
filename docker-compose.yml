@@ -23,13 +23,13 @@ services:
   app:
     container_name: teste_workmize
     restart: always
+    volumes:
+      - .:/usr/app
     env_file:
       - .env
-    build: .
+    build: ./docker_environments/Dockerfile.${DOCKER_ENV}
     ports:
       - '3333:3333'
-    volumes:
-      - .:/usr/src/app
     networks:
       - app-network
     depends_on:
