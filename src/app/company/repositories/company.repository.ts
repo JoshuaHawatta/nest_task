@@ -11,7 +11,7 @@ class CompanyRepository {
   ) {}
 
   public async ensureCompanyExists(): Promise<Company> {
-    const company = await this.company.findOne({ name: 'Workmize' });
+    const company = await this.company.findOne({ name: 'Empresa Fake' });
 
     if (company) return company;
 
